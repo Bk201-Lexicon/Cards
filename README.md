@@ -12,7 +12,7 @@
 
 ### Links and Resources
 
-## Heroku:  ![]()
+##   [Heroku](https://lexicon-cards.herokuapp.com/)
 
 ### Setup
 
@@ -41,7 +41,7 @@ i.e.
 - `node index.js`
 
 
-#### UML
+## UML
 
 
 ![lab8](https://raw.githubusercontent.com/Bk201-Lexicon/Cards/main/uml.png)
