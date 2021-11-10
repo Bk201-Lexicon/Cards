@@ -2,7 +2,9 @@
 
 require("dotenv").config();
 const { Sequelize, DataTypes } = require("sequelize");
+const ModelHelper = require("./data-collection");
 // const userSchema = require("./users.js");
+const Care = require("./cards");
 
 const DATABASE_URL =
   process.env.NODE_ENV === "test" ? "sqlite:memory:" : process.env.DATABASE_URL;
@@ -24,5 +26,6 @@ const sequelize = new Sequelize(DATABASE_URL, DATABASE_CONFIG);
 
 module.exports = {
   db: sequelize,
-//   users: userSchema(sequelize, DataTypes),
+  Care: new ModelHelper(Care(sequelize, DataTypes)),
+  //   users: userSchema(sequelize, DataTypes),
 };
