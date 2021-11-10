@@ -12,7 +12,7 @@
 
 ### Links and Resources
 
-### Pull_request : [PR](https://github.com/MasteRminD6666/auth-api/pull/1)
+## Heroku:  ![]()
 
 ### Setup
 
@@ -43,6 +43,6 @@ i.e.
 
 #### UML
 
-<!-- 
-![lab8](https://github.com/MasteRminD6666/auth-api/blob/dev/lab8.png?raw=true)
-![lab7](https://github.com/MasteRminD6666/auth-api/raw/dev/lab7.png?raw=true) -->
+
+![lab8](https://raw.githubusercontent.com/Bk201-Lexicon/Cards/main/uml.png)
+![lab7](https://raw.githubusercontent.com/Bk201-Lexicon/Cards/main/lab8.png)
