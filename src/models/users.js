@@ -12,7 +12,7 @@ const userModel = (sequelize, DataTypes) => {
     role: {
       type: DataTypes.ENUM("guest", "user", "editor", "admin"),
       required: true,
-      defaultValue: "user",
+      defaultValue: "guest",
     },
     token: {
       type: DataTypes.VIRTUAL,
@@ -28,14 +28,14 @@ const userModel = (sequelize, DataTypes) => {
       type: DataTypes.VIRTUAL,
       get() {
         const acl = {
-          guest: ['read'],
-          user: ['read', 'create'],
-          editor: ['read', 'create', 'update'],
-          admin: ['read', 'create', 'update', 'delete']
+          guest: ["read"],
+          user: ["read", "create"],
+          editor: ["read", "create", "update"],
+          admin: ["read", "create", "update", "delete"],
         };
         return acl[this.role];
-      }
-    }
+      },
+    },
   });
 
   model.authenticateBasic = async function (username, password) {
