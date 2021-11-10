@@ -33,7 +33,7 @@ const cardsCollection = new Collection(cardsModel);
 
 module.exports = {
   db: sequelize,
-
+  cardsModel,
   usersCollection,
   cardsCollection,
 };

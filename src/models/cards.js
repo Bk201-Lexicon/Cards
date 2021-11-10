@@ -10,7 +10,7 @@
  * @member attack int not null,
  * @returns {Model}
  */
-const Cards = (sequelize, DataType) => {
+const Cards = (sequelize, DataType) =>
   sequelize.define("cards", {
     name: { type: DataType.STRING, allowNull: false },
     description: { type: DataType.STRING, allowNull: false },
@@ -18,5 +18,5 @@ const Cards = (sequelize, DataType) => {
     defense: { type: DataType.INTEGER, allowNull: false },
     attack: { type: DataType.INTEGER, allowNull: false },
   });
-};
+
 module.exports = Cards;

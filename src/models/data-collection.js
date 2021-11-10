@@ -16,6 +16,7 @@ class ModelHelper {
     else return this.model.findAll();
   }
   create = (data) => this.model.create(data);
+
   update = (id, data) => this.model.update(data, { where: { id } });
   delete = (id) => this.model.destroy({ where: { id } });
 }
